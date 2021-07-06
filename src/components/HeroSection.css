@@ -1,3 +1,9 @@
+.under-construction {
+  text-align: center;
+  background-color: #3a4a4b;
+  color: rgb(241, 23, 23);
+}
+
 .hero-container {
     background: url('../images/banner_pic.jpg') center center/cover no-repeat;
     position: relative;
@@ -53,6 +59,10 @@
   }
   
   @media screen and (max-width: 960px) {
+    .under-construction {
+font-size: .8rem;
+    }
+
     .hero-container {
       display: none;
     }

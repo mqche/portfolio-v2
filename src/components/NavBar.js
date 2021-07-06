@@ -36,17 +36,17 @@ useEffect(() => {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
+                                home
                           </Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
-                                About Me
+                                about_me
                           </Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                Projects
+                                more_projects
                           </Link>
                         </li>
                         <li className='nav-item'>
@@ -55,7 +55,7 @@ useEffect(() => {
                           </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>CONTACT</Button>}
+                    {button && <Button buttonStyle='btn--outline'>contact</Button>}
                 </div>
             </nav>
         </>
