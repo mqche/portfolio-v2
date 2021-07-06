@@ -13,7 +13,7 @@ export default function CardList() {
 
                         <li className="intro">
                             <br></br>
-                            <p>What exciting ideas are brewing in the recesses of your mind? Do you imagine yourself running an online small business during your coffee breaks? Are you an artist in search of a creative home base? Let's talk about them and start you on your next adventure.</p>
+                            <p>What exciting ideas are brewing in the recesses of your mind? Do you imagine yourself running a small business during your coffee breaks? Are you an artist in search of a creative home base? Let's talk about them and start you on your next adventure.</p>
                             <br></br>
                             <p>Proficiencies: </p>
                             <i class="fab fa-js"> JavaScript  </i> <i class="fab fa-html5"> HTML5  </i> <i class="fab fa-css3-alt"> CSS  </i> <i class="fab fa-react"> React</i> <i class="fab fa-node-js"> Node</i>
@@ -24,7 +24,7 @@ export default function CardList() {
                             <CardItem
                                 src={require('../images/img-4.jpg').default}
                                 text='A reservation app for restaurants to create, edit, and update reservations'
-                                label='Restaurant Reservation'
+                                label='Restaurant Reservation Manager'
                                 path='https://github.com/mqche/restaurant-reservation-app-final'
                             />
                         </li>
