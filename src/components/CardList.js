@@ -13,8 +13,11 @@ export default function CardList() {
 
                         <li className="intro">
                             <br></br>
-                            <p>What exciting ideas are brewing in the recesses of your mind? Do you imagine yourself running a small business during your coffee breaks? Are you an artist in search of a creative home base? Let's talk about them and start you on your next adventure.</p>
-                            <br></br>
+                            <p>What ideas are brewing in the recesses of your mind?</p>
+                            <p>Do you dream of running an online business during your coffee breaks?</p>
+                            <p>Are you an artist in search of a creative home base?</p>
+                            <p>Let's talk about them and start you on your next adventure.</p>
+                    
                             <p>Proficiencies: </p>
                             <i class="fab fa-js"> JavaScript  </i> <i class="fab fa-html5"> HTML5  </i> <i class="fab fa-css3-alt"> CSS  </i> <i class="fab fa-react"> React</i> <i class="fab fa-node-js"> Node</i>
                         </li>

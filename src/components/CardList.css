@@ -1,3 +1,12 @@
+.intro {
+  padding-top: 2em;
+  line-height: 1.5
+}
+
+.intro p {
+  padding-bottom: .7em;
+}
+
 li {
   margin: 0 2%;
 }
@@ -14,12 +23,7 @@ h3 {
   font-weight: bolder;
 }
 
-.intro {
-  width: 100%;
-  font-size: 1.2em;
-  padding-top: .7rem;
-  padding-right: 2rem;
-}
+ 
 
 .cards {
   display: flex;
