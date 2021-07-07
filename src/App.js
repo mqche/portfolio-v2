@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './components/NavBar';
 import './App.css';
 import Home from './components/pages/Home';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer'
 import AboutMe from './components/pages/AboutMe';
 import Projects from './components/pages/Projects';
