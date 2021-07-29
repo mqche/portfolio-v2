@@ -19,6 +19,7 @@ export default function Footer() {
                         <a class='social-icon-link email' target='about_blank' href="mailto:mche135@gmail.com" rel="noreferrer"> <i class="fas fa-envelope"></i></a>
                         <a class='social-icon-link github' target='about_blank' href="https://github.com/mqche" rel="noreferrer"><i class='fab fa-github' /></a>
                         <a class='social-icon-link linkedin' target='about_blank' href="https://www.linkedin.com/in/minh-che/" rel="noreferrer"><i class='fab fa-linkedin' /></a>
+                        <a class='social-icon-link codewars' target='about_blank' href="https://www.codewars.com/users/youngguru343" rel="noreferrer"><img src={require('../images/codewars_logo.jpg').default} className='codewars' /></a>
                     </div>
                 </div>
             </section>
