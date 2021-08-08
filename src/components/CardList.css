@@ -120,14 +120,14 @@ h3 {
 }
 
 .cards__item__info {
-  padding: .7 rem;
+  padding: 2%;
 }
 
 .cards__item__text {
   color: #fff;
   font-size: 1.2rem;
   line-height: 32px;
-  
+
   text-align: center;
 }
 
