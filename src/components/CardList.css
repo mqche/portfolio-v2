@@ -1,11 +1,12 @@
 .intro {
-  padding-top: .2em;
+  padding-top: 0.2em;
   line-height: 1.5em;
   font-size: 1.1em;
+  min-width: 300px;
 }
 
 .intro p {
-  padding-bottom: .7em;
+  padding-bottom: 0.7em;
 }
 
 li {
@@ -23,8 +24,6 @@ h3 {
   font-size: 1.5em;
   font-weight: bolder;
 }
-
- 
 
 .cards {
   display: flex;
@@ -125,9 +124,8 @@ h3 {
 
 .cards__item__text {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   line-height: 32px;
-
   text-align: center;
 }
 
