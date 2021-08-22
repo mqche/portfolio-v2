@@ -28,7 +28,7 @@ useEffect(() => {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        placeholder <i className='fab fa-typo3' />
+                         <i className='fab fa-typo3'> placeholder</i> 
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -46,7 +46,7 @@ useEffect(() => {
                         </li>
                         <li className='nav-item'>
                             <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                more_projects
+                                github_repo
                           </Link>
                         </li>
                         <li className='nav-item'>
@@ -55,7 +55,7 @@ useEffect(() => {
                           </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>contact</Button>}
+                    {button && <Button buttonStyle='btn--outline'>BUTTON</Button>}
                 </div>
             </nav>
         </>

@@ -1,3 +1,9 @@
+i {
+  padding: .1em;
+  padding-bottom: -1em;
+  font-size: 1em;
+}
+
 .under-construction {
   text-align: center;
   background-color: #3a4a4b;
@@ -7,13 +13,13 @@
 .hero-container {
     background: url('../images/banner_pic.jpg') center center/cover no-repeat;
     position: relative;
-    height: 14rem;
+    height: 10em;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
     object-fit: contain;
     text-align: center;
   }

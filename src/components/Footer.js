@@ -10,8 +10,8 @@ export default function Footer() {
                 <div class='social-media-wrap'>
                     <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            placeholder
-                            <i class='fab fa-typo3' />
+                            
+                            <i class='fab fa-typo3'> placeholder</i>
                         </Link>
                     </div>
                     <h3 class='website-rights'>Minh Che © 2021</h3>
