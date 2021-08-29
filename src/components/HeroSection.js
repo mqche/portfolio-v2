@@ -11,7 +11,7 @@ export default function HeroSection() {
 
                 {/* <img className="banner_img" src="../src/images/banner_pic.jpg" alt="mountain_banner"></img> */}
                 <h3>Hi, I'm Minh!</h3>
-                <p className="hero-fade">I'll be your developer today.</p>
+                <p className="hero-fade">I'LL BE YOUR DEVELOPER TODAY.</p>
 
             </div>
 

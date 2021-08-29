@@ -51,7 +51,7 @@ useEffect(() => {
                         </li>
                         <li className='nav-item'>
                             <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                CONTACT ME
+                                button
                           </Link>
                         </li>
                     </ul>

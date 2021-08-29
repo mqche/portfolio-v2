@@ -1,24 +1,21 @@
 * {
-    /* background-color: #3a4a4b; */
-     font-family: "Poppins";
-     /* min-width: 320px; */
+  /* height: 100vh; */
+  font-family: "Poppins";
 }
 
 .intro {
-  line-height: 1.1em;
   font-size: 1.7em;
-  /* min-width: 150px; */
+  width: 100%;
   box-sizing: border-box;
-  
 }
 
 .intro p {
   padding-bottom: 0.8em;
 }
 
-li {
+/* li {
   margin: 3% auto;
-}
+} */
 
 i {
   /* padding: .5em 1em 0 0; */
@@ -36,12 +33,21 @@ h3 {
   font-weight: 400;
 }
 
+.container {
+  width: 500px;
+  height: 375px;
+  background: #232323;
+  margin: 20px;
+  display: flex;
+  border-radius: 3px;
+}
+
 .cards {
   display: flex;
   color: white;
-  padding: 0;
-  margin-top: -2px;
-  margin-bottom: -10px;
+  padding: 15px;
+  /* margin-top: -2px; */
+  /* margin-bottom: -10px; */
   background: #3a4a4b;
   position: relative;
   border: 6px solid black;
@@ -54,36 +60,37 @@ h3 {
   flex-flow: column;
   justify-content: flex-end;
   align-items: center;
-  /* height: 50%; */
+  /* height: 500px; */
   /* max-width: 1120px; */
   width: 100%;
 }
 
 .cards__wrapper {
   margin: 0;
+  height: 100%;
 }
 
 .cards__items {
-
   list-style-type: none;
+  /* height: inherit; */
   background-color: #3a4a4b;
-  /* margin: 100px; */
-
+  /* margin: 20px; */
 }
 
 .cards__items li {
+  flex: 1;
   background-color: #232323;
-  border-radius: 3px;
+  height: 100%;
   border: 6px solid black;
-  margin: 10px 5px;
-  padding: 3px;
+  margin: 4px 3px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 0.8em;
 }
 
 .cards__item {
   display: flex;
   flex: 1;
-  border-radius: 10px;
-  /* height: 21rem; */
   width: 97%;
 }
 
@@ -100,7 +107,6 @@ h3 {
   text-decoration: none;
   height: 100%;
   width: 100%;
-
 }
 
 .cards__item__pic-wrap {
@@ -111,8 +117,20 @@ h3 {
   overflow: hidden;
 }
 
+.proficiencies {
+  padding-top: 2em;
+  text-align: center;
+  font-size: 8em;
+}
+
 .proficiencies i {
   color: yellow;
+  font-size: 1.3em;
+  padding-right: 6px;
+}
+
+.proficiencies h2 {
+  height: 35px;
 }
 
 .fade-img {
@@ -125,10 +143,10 @@ h3 {
   position: absolute;
   bottom: 0;
   margin-left: 10px;
-  padding: 6px 8px;
+  padding: 0px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 1.5em;
+  /* font-weight: 700; */
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
@@ -173,48 +191,7 @@ h3 {
   }
 } */
 
-@media only screen and (min-width: 1200px) {
-  .content__blog__container {
-    width: 84%;
-  }
-}
 
-@media only screen and (min-width: 1024px) {
-  /* .cards {
-        padding: 0;
-      } */
-
-
-
-  .cards__items {
-    display: flex;
-    /* width: 20%; */
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .cards {
-    padding: 0;
-  }
-
-  .intro {
-    width: 100%;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-  }
-
-  .cards__item {
-    margin-bottom: 3rem;
-  }
-
-  .cards__item__link {
-    width: 100%;
-  }
-
-  .intro p {
-    padding-bottom: 0.3em;
-  }
-}
 
 /* FADE IN TEXT */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
@@ -229,24 +206,12 @@ html {
   overflow: hidden;
 } */
 
-.container {
+.box {
   width: 100%;
   height: 100%;
-  background: #232323;
-  /* margin: 20px; */
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 3px;
-}
-
-.box {
-  width: 500px;
-  height: 250px;
   position: relative;
   display: flex;
-  /* justify-content: center; */
+  justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -276,7 +241,7 @@ html {
   -webkit-animation: mainFadeIn 2s forwards;
   -o-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
   opacity: 0;
   justify-content: center;
   display: flex;
@@ -306,9 +271,19 @@ span {
   width: 100%;
   position: relative;
   display: block;
+  text-align: center;
   align-items: center;
-  height: 30px;
-  margin-top: -10px;
+  height: 33px;
+  list-style: none;
+  text-transform: uppercase;
+  animation: secFadeIn 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  font-size: 1rem;
+}
+
+.role li {
+  border: 0;
 }
 
 p {
@@ -316,63 +291,54 @@ p {
   animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
-  /* font-family: "Lato"; */
+  font-family: "Lato";
   color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-.block {
-  width: 0%;
-  height: inherit;
-  background: #ffffff;
-  position: absolute;
-  animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 2s;
-  display: flex;
+.intro-line-1 {
+  padding: 1.5em 0 4em 0;
+  animation: secFadeIn 5s forwards;
+  font-size: 1em !important;
+  opacity: 0;
+  /* animation-delay: 2.8s; */
 }
 
 .block-2 {
- /* animation: secFadeIn 2.5s forwards; */
-  animation-delay: 2.3s;
+  animation-delay: 2s;
 }
 
 .intro-line-2 {
-  /* animation: secFadeIn 10s forwards; */
-  animation-delay: 3.3s;
+  animation: secFadeIn 7s forwards;
+  /* animation-delay: 20s; */
 }
 
 .block-3 {
-  animation-delay: 2.8s;
+  animation-delay: 2.5s;
 }
 
 .intro-line-3 {
-  /* animation: secFadeIn 10s forwards; */
-  animation-delay: 3.8s;
+  animation: secFadeIn 8s forwards;
+  /* animation-delay: 3.8s; */
 }
 
 .block-4 {
-  animation-delay: 3.3s;
+  animation-delay: 3s;
 }
 
 .intro-line-4 {
-  /* animation: secFadeIn 10s forwards; */
-  animation-delay: 4.3s;
+  animation: secFadeIn 9s forwards;
+  /* animation-delay: 4.3s; */
 }
 
 .block-5 {
-  animation-delay: 3.8s;
-}
-
-.intro-line-5 {
-  /* animation: secFadeIn 10s forwards; */
-  font-size: .5em;
-  animation-delay: 4.8s;
+  animation-delay: 3.5s;
 }
 
 .hero-fade {
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 /* .container {
@@ -554,7 +520,7 @@ p {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 
@@ -612,5 +578,57 @@ footer {
   100% {
     opacity: 1;
     bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* .cards {
+        padding: 0;
+      } */
+
+  .cards__items {
+    display: flex;
+    /* width: 20%; */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards {
+    padding: 0;
+    /* display: flex; */
+  }
+
+  .intro {
+    width: inherit;
+    font-size: 1.3rem;
+    /* margin-bottom: 2rem; */
+    height: 300px;
+  }
+
+  .intro-line-1 {
+    padding-top: 0em;
+  }
+
+  .container {
+    width: 95%;
+    height: 300px;
+  }
+
+  .cards__item {
+    margin-bottom: 3rem;
+  }
+
+  .cards__item__link {
+    width: 100%;
+  }
+
+  .intro p {
+    padding-bottom: 0.3em;
   }
 }
