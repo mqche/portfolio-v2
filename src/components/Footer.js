@@ -10,7 +10,6 @@ export default function Footer() {
                 <div class='social-media-wrap'>
                     <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            
                             <i class='fab fa-typo3'> placeholder</i>
                         </Link>
                     </div>

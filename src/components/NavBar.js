@@ -40,17 +40,17 @@ useEffect(() => {
                           </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='' className='nav-links' onClick={closeMobileMenu}>
                                 about_me
                           </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='' className='nav-links' onClick={closeMobileMenu}>
                                 github_repo
                           </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            <Link to='' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 button
                           </Link>
                         </li>

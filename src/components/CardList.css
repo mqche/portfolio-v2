@@ -1,21 +1,6 @@
 * {
-  /* height: 100vh; */
   font-family: "Poppins";
 }
-
-.intro {
-  font-size: 1.7em;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.intro p {
-  padding-bottom: 0.8em;
-}
-
-/* li {
-  margin: 3% auto;
-} */
 
 i {
   /* padding: .5em 1em 0 0; */
@@ -29,8 +14,9 @@ i {
 h3 {
   text-align: center;
   color: rgb(167, 0, 0);
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 400;
+  padding-bottom: 5px;
 }
 
 .container {
@@ -44,13 +30,12 @@ h3 {
 
 .cards {
   display: flex;
+  flex: 1 1 1;
   color: white;
-  padding: 15px;
-  /* margin-top: -2px; */
-  /* margin-bottom: -10px; */
-  background: #3a4a4b;
+  padding: 5px;
+  /* background: #3a4a4b; */
   position: relative;
-  border: 6px solid black;
+  /* border: 6px solid #232323; */
   justify-content: center;
   height: 100%;
 }
@@ -60,44 +45,64 @@ h3 {
   flex-flow: column;
   justify-content: flex-end;
   align-items: center;
-  /* height: 500px; */
+  /* height: 100%; */
   /* max-width: 1120px; */
   width: 100%;
+  /* border: 10px solid #232323; */
+  border: 10px solid black;
+
 }
 
 .cards__wrapper {
   margin: 0;
   height: 100%;
+  display: flex;
 }
 
 .cards__items {
+  display: flex;
+  flex: 1 1;
   list-style-type: none;
-  /* height: inherit; */
-  background-color: #3a4a4b;
-  /* margin: 20px; */
+  /* background-color: #3a4a4b; */
+  border: 2px solid black;
+}
+
+/* .cards_items ul {
+display: flex;
+flex: 1 3 1;
+} */
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .cards__items li {
-  flex: 1;
+  display: flex;
   background-color: #232323;
   height: 100%;
-  border: 6px solid black;
-  margin: 4px 3px;
+  /* border: 6px solid black; */
+  border: 10px solid #232323;
+  margin: auto 6px;
   font-weight: 400;
   letter-spacing: 3px;
   font-size: 0.8em;
 }
 
-.cards__item {
-  display: flex;
-  flex: 1;
-  width: 97%;
+.cards__items .role p {
+  background-color: #232323;
+  height: 100%;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 1em;
 }
 
 .cards__item__link {
   display: flex;
+  width: 100%;
   flex-flow: column;
-  width: 23rem;
   background: #588d90;
   box-shadow: 0 6px 20px #3a4a4b;
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -105,8 +110,11 @@ h3 {
   border-radius: 3px;
   overflow: hidden;
   text-decoration: none;
-  height: 100%;
-  width: 100%;
+}
+
+.cards__item__link h3 {
+  background: black;
+  font-size: 1.5rem;
 }
 
 .cards__item__pic-wrap {
@@ -115,27 +123,6 @@ h3 {
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
-}
-
-.proficiencies {
-  padding-top: 2em;
-  text-align: center;
-  font-size: 8em;
-}
-
-.proficiencies i {
-  color: yellow;
-  font-size: 1.3em;
-  padding-right: 6px;
-}
-
-.proficiencies h2 {
-  height: 35px;
-}
-
-.fade-img {
-  animation-name: fade-img;
-  animation-duration: 2s;
 }
 
 .cards__item__pic-wrap::after {
@@ -162,6 +149,8 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
   transition: all 0.2s linear;
 }
 
@@ -170,15 +159,40 @@ h3 {
 }
 
 .cards__item__info {
-  padding: 2%;
+  padding: 10px;
+  margin: auto 10px;
 }
 
 .cards__item__text {
   color: #fff;
   font-size: 1.2rem;
-  line-height: 32px;
+  line-height: 24px;
   text-align: center;
   font-weight: 500;
+}
+
+.proficiencies {
+  width: 80%;
+  /* display: inline;
+  flex-direction: row; */
+}
+
+.proficiencies i {
+
+  color: rgb(255, 255, 0);
+  font-size: 1.3em;
+/* text-align: center; */
+  /* display: inline; */
+  padding: 30px 5px;
+}
+
+.proficiencies h2 {
+  height: 40px;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
 }
 
 .fab {
@@ -190,8 +204,6 @@ h3 {
     width: 100%;
   }
 } */
-
-
 
 /* FADE IN TEXT */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
@@ -210,9 +222,7 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  /* margin: auto 0; */
 }
 
 .title {
@@ -249,7 +259,7 @@ html {
   position: relative;
 }
 
-span {
+/* span {
   width: 0px;
   height: 0px;
   -webkit-border-radius: 50%;
@@ -265,25 +275,24 @@ span {
   position: absolute;
   bottom: 13px;
   right: -12px;
-}
+} */
 
 .role {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
   width: 100%;
   position: relative;
-  display: block;
-  text-align: center;
-  align-items: center;
-  height: 33px;
+  height: 100%;
   list-style: none;
   text-transform: uppercase;
   animation: secFadeIn 2s forwards;
   animation-delay: 1s;
   opacity: 0;
-  font-size: 1rem;
-}
-
-.role li {
-  border: 0;
+  font-size: 1.5rem;
 }
 
 p {
@@ -298,10 +307,15 @@ p {
   letter-spacing: 5px;
 }
 
+.card_intro {
+  display: flex;
+}
+
 .intro-line-1 {
-  padding: 1.5em 0 4em 0;
+  color: white;
+  /* margin: 0em 0 1em 0 !important; */
   animation: secFadeIn 5s forwards;
-  font-size: 1em !important;
+  /* font-size: .9em !important; */
   opacity: 0;
   /* animation-delay: 2.8s; */
 }
@@ -335,6 +349,11 @@ p {
 
 .block-5 {
   animation-delay: 3.5s;
+}
+
+.intro-line-5 {
+  animation: secFadeIn 9s forwards;
+  font-size: 1em !important;
 }
 
 .hero-fade {
@@ -440,6 +459,19 @@ p {
     }
   }
 } */
+
+.blinking{
+  color: white;
+  animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: white;    }
+  49%{    color: white; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: white;    }
+}
 
 @keyframes mainBlock {
   0% {
@@ -588,11 +620,7 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* .cards {
-        padding: 0;
-      } */
-
-  .cards__items {
+.cards__items {
     display: flex;
     /* width: 20%; */
   }
@@ -605,19 +633,18 @@ footer {
   }
 
   .intro {
-    width: inherit;
+    /* width: inherit; */
     font-size: 1.3rem;
-    /* margin-bottom: 2rem; */
-    height: 300px;
-  }
-
-  .intro-line-1 {
-    padding-top: 0em;
+    /* height: 300px; */
   }
 
   .container {
     width: 95%;
     height: 300px;
+  }
+
+  .cards__items li {
+    padding: 0;
   }
 
   .cards__item {
@@ -630,5 +657,16 @@ footer {
 
   .intro p {
     padding-bottom: 0.3em;
+  }
+
+  .proficiencies {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards__items li {
+    /* margin: 5px 0 0 0; */
   }
 }

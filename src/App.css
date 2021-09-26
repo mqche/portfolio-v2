@@ -6,6 +6,13 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+
+
+body {
+  background-color: rgb(19, 19, 19);
+  border: 30px solid rgb(19, 19, 19);
+}
+
 .home,
 .about-me,
 .projects,
@@ -46,3 +53,11 @@
   color: #fff;
   font-size: 100px;
 } 
+
+@media only screen and (max-width: 1024px) {
+  html,
+  body
+   {
+    height: 95% !important;
+  }
+}
